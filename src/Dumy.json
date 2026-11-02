@@ -1,0 +1,1273 @@
+[
+    {
+        "_id": "6ad9e801ad8d0060c4c58eda",
+        "subscriptionId": "SUB-9758",
+        "subscriptionName": "Master",
+        "pricing": [
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea1",
+                    "packName": "Monthly",
+                    "packKey": "monthly",
+                    "durationCount": 1,
+                    "durationUnit": "month",
+                    "durationDays": 30,
+                    "isActive": true,
+                    "sortOrder": 1,
+                    "createdAt": "2026-10-22T10:38:48.445Z",
+                    "updatedAt": "2026-10-22T10:38:48.445Z",
+                    "__v": 0
+                },
+                "packKey": "monthly",
+                "packName": "Monthly",
+                "durationDays": 30,
+                "amount": 299,
+                "_id": "6ae423c210ef4f0cf936da64"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea7",
+                    "packName": "Quarterly",
+                    "packKey": "quarterly",
+                    "durationCount": 3,
+                    "durationUnit": "months",
+                    "durationDays": 90,
+                    "isActive": true,
+                    "sortOrder": 2,
+                    "createdAt": "2026-10-22T10:38:48.526Z",
+                    "updatedAt": "2026-10-22T10:38:48.526Z",
+                    "__v": 0
+                },
+                "packKey": "quarterly",
+                "packName": "Quarterly",
+                "durationDays": 90,
+                "amount": 399,
+                "_id": "6ae423c210ef4f0cf936da65"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eab",
+                    "packName": "Half-yearly",
+                    "packKey": "half_yearly",
+                    "durationCount": 6,
+                    "durationUnit": "months",
+                    "durationDays": 180,
+                    "isActive": true,
+                    "sortOrder": 3,
+                    "createdAt": "2026-10-22T10:38:48.599Z",
+                    "updatedAt": "2026-10-22T10:38:48.599Z",
+                    "__v": 0
+                },
+                "packKey": "half_yearly",
+                "packName": "Half-yearly",
+                "durationDays": 180,
+                "amount": 499,
+                "_id": "6ae423c210ef4f0cf936da66"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eb1",
+                    "packName": "Annual",
+                    "packKey": "annual",
+                    "durationCount": 1,
+                    "durationUnit": "year",
+                    "durationDays": 365,
+                    "isActive": true,
+                    "sortOrder": 4,
+                    "createdAt": "2026-10-22T10:38:48.673Z",
+                    "updatedAt": "2026-10-22T10:38:48.673Z",
+                    "__v": 0
+                },
+                "packKey": "annual",
+                "packName": "Annual",
+                "durationDays": 365,
+                "amount": 599,
+                "_id": "6ae423c210ef4f0cf936da67"
+            }
+        ],
+        "isPopular": true,
+        "features": [
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7247",
+                    "key": "quotation_create",
+                    "featureName": "Quotation Generation",
+                    "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.518Z",
+                    "updatedAt": "2026-10-23T04:21:17.619Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Quotation Generation",
+                "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae423c210ef4f0cf936da68"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e9402f",
+                    "key": "monthly_report",
+                    "featureName": "Monthly Report",
+                    "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.737Z",
+                    "updatedAt": "2026-10-23T12:45:22.737Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Monthly Report",
+                "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae423c210ef4f0cf936da69"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e525b876f348963cc5c7",
+                    "featureName": "User account",
+                    "featureDescription": "Test",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:37:41.531Z",
+                    "updatedAt": "2026-10-22T09:48:52.449Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "user_account"
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "count",
+                    "value": 5
+                },
+                "featureName": "User account",
+                "featureDescription": "Test",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6a"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e579b876f348963cc5d6",
+                    "featureName": "PDF Export",
+                    "featureDescription": "Export quotations to customized PDF format",
+                    "type_feature": "Count + Time",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:39:05.801Z",
+                    "updatedAt": "2026-10-23T10:50:18.946Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "pdf_export"
+                },
+                "enabled": true,
+                "value": 6,
+                "rule": {
+                    "type": "count_time",
+                    "value": 6,
+                    "period": {
+                        "value": 1,
+                        "unit": "hour"
+                    }
+                },
+                "featureName": "PDF Export",
+                "featureDescription": "Export quotations to customized PDF format",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6b"
+            },
+            {
+                "featureId": {
+                    "_id": "6abcad17bd5e819a18da651d",
+                    "featureName": "Email system",
+                    "featureDescription": "Email send your customer",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-30T06:32:55.933Z",
+                    "updatedAt": "2026-09-30T10:31:55.086Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Email system",
+                "featureDescription": "Email send your customer",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6c"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724c",
+                    "key": "template_access",
+                    "featureName": "Templete Accses",
+                    "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.649Z",
+                    "updatedAt": "2026-10-22T09:48:52.649Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Templete Accses",
+                "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6d"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724f",
+                    "key": "product_management",
+                    "featureName": "Product Management",
+                    "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.714Z",
+                    "updatedAt": "2026-10-22T09:48:52.714Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "count",
+                    "value": 5
+                },
+                "featureName": "Product Management",
+                "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6e"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7252",
+                    "key": "customer_management",
+                    "featureName": "Customer Management",
+                    "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.785Z",
+                    "updatedAt": "2026-10-23T12:45:22.589Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Customer Management",
+                "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da6f"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7255",
+                    "key": "reports_analytics",
+                    "featureName": "Reports & Analytics",
+                    "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.871Z",
+                    "updatedAt": "2026-10-22T09:48:52.871Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Reports & Analytics",
+                "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da70"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7258",
+                    "key": "email_dispatch",
+                    "featureName": "Email Quotations",
+                    "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.951Z",
+                    "updatedAt": "2026-10-22T09:48:52.951Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "count",
+                    "value": 5
+                },
+                "featureName": "Email Quotations",
+                "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da71"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e94032",
+                    "key": "quotation_convert",
+                    "featureName": "Quotation Conversion",
+                    "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.815Z",
+                    "updatedAt": "2026-10-23T12:45:22.815Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Quotation Conversion",
+                "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da72"
+            },
+            {
+                "featureId": {
+                    "_id": "6adc8df279f7decc95779cc1",
+                    "key": "support_access",
+                    "featureName": "Support Access",
+                    "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-24T10:52:34.482Z",
+                    "updatedAt": "2026-10-24T10:52:34.482Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "departmentPermissions": {
+                        "it_department": [
+                            "email",
+                            "phone"
+                        ]
+                    },
+                    "allowedDepartments": [
+                        "it_department"
+                    ],
+                    "allowedChannels": [
+                        "email",
+                        "phone"
+                    ]
+                },
+                "featureName": "Support Access",
+                "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae423c210ef4f0cf936da73"
+            }
+        ],
+        "createdAt": "2026-10-22T10:40:01.646Z",
+        "updatedAt": "2026-10-31T04:33:59.065Z",
+        "__v": 9,
+        "cardTheme": {
+            "key": "teal"
+        }
+    },
+    {
+        "_id": "6ad9eaf5ad8d0060c4c58f00",
+        "subscriptionId": "SUB-2151",
+        "subscriptionName": "Basic",
+        "pricing": [
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea1",
+                    "packName": "Monthly",
+                    "packKey": "monthly",
+                    "durationCount": 1,
+                    "durationUnit": "month",
+                    "durationDays": 30,
+                    "isActive": true,
+                    "sortOrder": 1,
+                    "createdAt": "2026-10-22T10:38:48.445Z",
+                    "updatedAt": "2026-10-22T10:38:48.445Z",
+                    "__v": 0
+                },
+                "packKey": "monthly",
+                "packName": "Monthly",
+                "durationDays": 30,
+                "amount": 49,
+                "_id": "6ae1a2f065c5d7084f7be21a"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea7",
+                    "packName": "Quarterly",
+                    "packKey": "quarterly",
+                    "durationCount": 3,
+                    "durationUnit": "months",
+                    "durationDays": 90,
+                    "isActive": true,
+                    "sortOrder": 2,
+                    "createdAt": "2026-10-22T10:38:48.526Z",
+                    "updatedAt": "2026-10-22T10:38:48.526Z",
+                    "__v": 0
+                },
+                "packKey": "quarterly",
+                "packName": "Quarterly",
+                "durationDays": 90,
+                "amount": 59,
+                "_id": "6ae1a2f065c5d7084f7be21b"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eab",
+                    "packName": "Half-yearly",
+                    "packKey": "half_yearly",
+                    "durationCount": 6,
+                    "durationUnit": "months",
+                    "durationDays": 180,
+                    "isActive": true,
+                    "sortOrder": 3,
+                    "createdAt": "2026-10-22T10:38:48.599Z",
+                    "updatedAt": "2026-10-22T10:38:48.599Z",
+                    "__v": 0
+                },
+                "packKey": "half_yearly",
+                "packName": "Half-yearly",
+                "durationDays": 180,
+                "amount": 69,
+                "_id": "6ae1a2f065c5d7084f7be21c"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eb1",
+                    "packName": "Annual",
+                    "packKey": "annual",
+                    "durationCount": 1,
+                    "durationUnit": "year",
+                    "durationDays": 365,
+                    "isActive": true,
+                    "sortOrder": 4,
+                    "createdAt": "2026-10-22T10:38:48.673Z",
+                    "updatedAt": "2026-10-22T10:38:48.673Z",
+                    "__v": 0
+                },
+                "packKey": "annual",
+                "packName": "Annual",
+                "durationDays": 365,
+                "amount": 89,
+                "_id": "6ae1a2f065c5d7084f7be21d"
+            }
+        ],
+        "isPopular": false,
+        "features": [
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7247",
+                    "key": "quotation_create",
+                    "featureName": "Quotation Generation",
+                    "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.518Z",
+                    "updatedAt": "2026-10-23T04:21:17.619Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Quotation Generation",
+                "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae1a2f065c5d7084f7be21e"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e9402f",
+                    "key": "monthly_report",
+                    "featureName": "Monthly Report",
+                    "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.737Z",
+                    "updatedAt": "2026-10-23T12:45:22.737Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Monthly Report",
+                "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae1a2f065c5d7084f7be21f"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e525b876f348963cc5c7",
+                    "featureName": "User account",
+                    "featureDescription": "Test",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:37:41.531Z",
+                    "updatedAt": "2026-10-22T09:48:52.449Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "user_account"
+                },
+                "enabled": true,
+                "value": 2,
+                "rule": {
+                    "type": "count",
+                    "value": 2
+                },
+                "featureName": "User account",
+                "featureDescription": "Test",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be220"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e579b876f348963cc5d6",
+                    "featureName": "PDF Export",
+                    "featureDescription": "Export quotations to customized PDF format",
+                    "type_feature": "Count + Time",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:39:05.801Z",
+                    "updatedAt": "2026-10-23T10:50:18.946Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "pdf_export"
+                },
+                "enabled": true,
+                "value": 6,
+                "rule": {
+                    "type": "count_time",
+                    "value": 6,
+                    "period": {
+                        "value": 1,
+                        "unit": "week"
+                    }
+                },
+                "featureName": "PDF Export",
+                "featureDescription": "Export quotations to customized PDF format",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be221"
+            },
+            {
+                "featureId": {
+                    "_id": "6abcad17bd5e819a18da651d",
+                    "featureName": "Email system",
+                    "featureDescription": "Email send your customer",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-30T06:32:55.933Z",
+                    "updatedAt": "2026-09-30T10:31:55.086Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Email system",
+                "featureDescription": "Email send your customer",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be222"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724c",
+                    "key": "template_access",
+                    "featureName": "Templete Accses",
+                    "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.649Z",
+                    "updatedAt": "2026-10-22T09:48:52.649Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Templete Accses",
+                "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be223"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724f",
+                    "key": "product_management",
+                    "featureName": "Product Management",
+                    "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.714Z",
+                    "updatedAt": "2026-10-22T09:48:52.714Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Product Management",
+                "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be224"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7252",
+                    "key": "customer_management",
+                    "featureName": "Customer Management",
+                    "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.785Z",
+                    "updatedAt": "2026-10-23T12:45:22.589Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Customer Management",
+                "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be225"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7255",
+                    "key": "reports_analytics",
+                    "featureName": "Reports & Analytics",
+                    "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.871Z",
+                    "updatedAt": "2026-10-22T09:48:52.871Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Reports & Analytics",
+                "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be226"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7258",
+                    "key": "email_dispatch",
+                    "featureName": "Email Quotations",
+                    "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.951Z",
+                    "updatedAt": "2026-10-22T09:48:52.951Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "count",
+                    "value": 5
+                },
+                "featureName": "Email Quotations",
+                "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be227"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e94032",
+                    "key": "quotation_convert",
+                    "featureName": "Quotation Conversion",
+                    "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.815Z",
+                    "updatedAt": "2026-10-23T12:45:22.815Z",
+                    "__v": 0
+                },
+                "enabled": false,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Quotation Conversion",
+                "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be228"
+            },
+            {
+                "featureId": {
+                    "_id": "6adc8df279f7decc95779cc1",
+                    "key": "support_access",
+                    "featureName": "Support Access",
+                    "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-24T10:52:34.482Z",
+                    "updatedAt": "2026-10-24T10:52:34.482Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "departmentPermissions": {
+                        "it_department": [
+                            "email"
+                        ]
+                    },
+                    "allowedDepartments": [
+                        "it_department"
+                    ],
+                    "allowedChannels": [
+                        "email"
+                    ]
+                },
+                "featureName": "Support Access",
+                "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae1a2f065c5d7084f7be229"
+            }
+        ],
+        "createdAt": "2026-10-22T10:52:37.614Z",
+        "updatedAt": "2026-10-30T04:57:38.613Z",
+        "__v": 8,
+        "cardTheme": {
+            "key": "slate",
+            "name": "Slate Minimal",
+            "accentColor": "#334155",
+            "bgGradient": "from-slate-50/80 via-white to-slate-100/50",
+            "borderColor": "border-slate-300",
+            "ringColor": "ring-slate-500/20",
+            "badgeBg": "bg-slate-700 text-white",
+            "featureBoxBg": "border-slate-200 bg-slate-100/50",
+            "featureCheckColor": "text-slate-600",
+            "featureBadge": "bg-slate-200 text-slate-700 border border-slate-300"
+        }
+    },
+    {
+        "_id": "6ad9fcf39b20015fb6378385",
+        "subscriptionId": "SUB-5113",
+        "subscriptionName": "Business",
+        "pricing": [
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea1",
+                    "packName": "Monthly",
+                    "packKey": "monthly",
+                    "durationCount": 1,
+                    "durationUnit": "month",
+                    "durationDays": 30,
+                    "isActive": true,
+                    "sortOrder": 1,
+                    "createdAt": "2026-10-22T10:38:48.445Z",
+                    "updatedAt": "2026-10-22T10:38:48.445Z",
+                    "__v": 0
+                },
+                "packKey": "monthly",
+                "packName": "Monthly",
+                "durationDays": 30,
+                "amount": 799,
+                "_id": "6ae308be17246fb4482ce21f"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58ea7",
+                    "packName": "Quarterly",
+                    "packKey": "quarterly",
+                    "durationCount": 3,
+                    "durationUnit": "months",
+                    "durationDays": 90,
+                    "isActive": true,
+                    "sortOrder": 2,
+                    "createdAt": "2026-10-22T10:38:48.526Z",
+                    "updatedAt": "2026-10-22T10:38:48.526Z",
+                    "__v": 0
+                },
+                "packKey": "quarterly",
+                "packName": "Quarterly",
+                "durationDays": 90,
+                "amount": 2000,
+                "_id": "6ae308be17246fb4482ce220"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eab",
+                    "packName": "Half-yearly",
+                    "packKey": "half_yearly",
+                    "durationCount": 6,
+                    "durationUnit": "months",
+                    "durationDays": 180,
+                    "isActive": true,
+                    "sortOrder": 3,
+                    "createdAt": "2026-10-22T10:38:48.599Z",
+                    "updatedAt": "2026-10-22T10:38:48.599Z",
+                    "__v": 0
+                },
+                "packKey": "half_yearly",
+                "packName": "Half-yearly",
+                "durationDays": 180,
+                "amount": 5000,
+                "_id": "6ae308be17246fb4482ce221"
+            },
+            {
+                "packId": {
+                    "_id": "6ad9e7b8ad8d0060c4c58eb1",
+                    "packName": "Annual",
+                    "packKey": "annual",
+                    "durationCount": 1,
+                    "durationUnit": "year",
+                    "durationDays": 365,
+                    "isActive": true,
+                    "sortOrder": 4,
+                    "createdAt": "2026-10-22T10:38:48.673Z",
+                    "updatedAt": "2026-10-22T10:38:48.673Z",
+                    "__v": 0
+                },
+                "packKey": "annual",
+                "packName": "Annual",
+                "durationDays": 365,
+                "amount": 8999,
+                "_id": "6ae308be17246fb4482ce222"
+            }
+        ],
+        "isPopular": false,
+        "features": [
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7247",
+                    "key": "quotation_create",
+                    "featureName": "Quotation Generation",
+                    "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.518Z",
+                    "updatedAt": "2026-10-23T04:21:17.619Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Quotation Generation",
+                "featureDescription": "Maximum number of quotations allowed to be created within the subscription period or timeframe.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae308be17246fb4482ce223"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e9402f",
+                    "key": "monthly_report",
+                    "featureName": "Monthly Report",
+                    "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": true,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.737Z",
+                    "updatedAt": "2026-10-23T12:45:22.737Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Monthly Report",
+                "featureDescription": "Access high-level month-by-month business volume and conversion summary report.",
+                "featureStatus": "active",
+                "isCommon": true,
+                "_id": "6ae308be17246fb4482ce224"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e525b876f348963cc5c7",
+                    "featureName": "User account",
+                    "featureDescription": "Test",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:37:41.531Z",
+                    "updatedAt": "2026-10-22T09:48:52.449Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "user_account"
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "count",
+                    "value": 5
+                },
+                "featureName": "User account",
+                "featureDescription": "Test",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce225"
+            },
+            {
+                "featureId": {
+                    "_id": "6aa4e579b876f348963cc5d6",
+                    "featureName": "PDF Export",
+                    "featureDescription": "Export quotations to customized PDF format",
+                    "type_feature": "Count + Time",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-12T05:39:05.801Z",
+                    "updatedAt": "2026-10-23T10:50:18.946Z",
+                    "__v": 0,
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "key": "pdf_export"
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "PDF Export",
+                "featureDescription": "Export quotations to customized PDF format",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce226"
+            },
+            {
+                "featureId": {
+                    "_id": "6abcad17bd5e819a18da651d",
+                    "featureName": "Email system",
+                    "featureDescription": "Email send your customer",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "createdAt": "2026-09-30T06:32:55.933Z",
+                    "updatedAt": "2026-09-30T10:31:55.086Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Email system",
+                "featureDescription": "Email send your customer",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce227"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724c",
+                    "key": "template_access",
+                    "featureName": "Templete Accses",
+                    "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.649Z",
+                    "updatedAt": "2026-10-22T09:48:52.649Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Templete Accses",
+                "featureDescription": "Unlock premium invoice and quotation layout templates (modern, classic, minimalist, elegant).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce228"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d724f",
+                    "key": "product_management",
+                    "featureName": "Product Management",
+                    "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.714Z",
+                    "updatedAt": "2026-10-22T09:48:52.714Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Product Management",
+                "featureDescription": "Allowed number of items/products stored in the company product inventory catalog.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce229"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7252",
+                    "key": "customer_management",
+                    "featureName": "Customer Management",
+                    "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.785Z",
+                    "updatedAt": "2026-10-23T12:45:22.589Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Customer Management",
+                "featureDescription": "Allowed number of customer / client contacts stored in the client directory.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce22a"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7255",
+                    "key": "reports_analytics",
+                    "featureName": "Reports & Analytics",
+                    "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.871Z",
+                    "updatedAt": "2026-10-22T09:48:52.871Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Reports & Analytics",
+                "featureDescription": "Access detailed performance analytics, quotation conversion rates, and revenue exports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce22b"
+            },
+            {
+                "featureId": {
+                    "_id": "6ad9dc04bf880c708f8d7258",
+                    "key": "email_dispatch",
+                    "featureName": "Email Quotations",
+                    "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                    "type_feature": "Count",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-22T09:48:52.951Z",
+                    "updatedAt": "2026-10-22T09:48:52.951Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": null,
+                "rule": {
+                    "type": "unlimited",
+                    "value": null
+                },
+                "featureName": "Email Quotations",
+                "featureDescription": "Send quotations directly to customers via email with custom message templates.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce22c"
+            },
+            {
+                "featureId": {
+                    "_id": "6adb56e294da105be3e94032",
+                    "key": "quotation_convert",
+                    "featureName": "Quotation Conversion",
+                    "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-23T12:45:22.815Z",
+                    "updatedAt": "2026-10-23T12:45:22.815Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "value": 5
+                },
+                "featureName": "Quotation Conversion",
+                "featureDescription": "Mark quotations as Converted / Won business and track conversion volume in dashboards and reports.",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce22d"
+            },
+            {
+                "featureId": {
+                    "_id": "6adc8df279f7decc95779cc1",
+                    "key": "support_access",
+                    "featureName": "Support Access",
+                    "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                    "type_feature": "Boolean",
+                    "featureStatus": "active",
+                    "isCommon": false,
+                    "isImplemented": true,
+                    "createdAt": "2026-10-24T10:52:34.482Z",
+                    "updatedAt": "2026-10-24T10:52:34.482Z",
+                    "__v": 0
+                },
+                "enabled": true,
+                "value": 5,
+                "rule": {
+                    "type": "boolean",
+                    "departmentPermissions": {
+                        "customer_department": [
+                            "email",
+                            "phone"
+                        ],
+                        "it_department": [
+                            "email",
+                            "phone"
+                        ]
+                    },
+                    "allowedDepartments": [
+                        "customer_department",
+                        "it_department"
+                    ],
+                    "allowedChannels": [
+                        "email",
+                        "phone"
+                    ]
+                },
+                "featureName": "Support Access",
+                "featureDescription": "Access to support team contact details (Customer & IT support departments via email/phone).",
+                "featureStatus": "active",
+                "isCommon": false,
+                "_id": "6ae308be17246fb4482ce22e"
+            }
+        ],
+        "createdAt": "2026-10-22T12:09:23.731Z",
+        "updatedAt": "2026-10-30T04:57:38.613Z",
+        "__v": 11,
+        "cardTheme": {
+            "key": "teal"
+        }
+    }
+]
