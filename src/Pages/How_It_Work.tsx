@@ -141,11 +141,6 @@ export const How_It_Work: React.FC = () => {
             .how-it-works-section { padding-block: clamp(2.5rem, 5vh, 4rem); }
             .how-it-works-content h1 { font-size: clamp(2rem, 3.2vw, 2.75rem); }
             .how-it-works-grid { margin-top: 1rem; }
-            .how-it-works-preview-card { min-height: 400px; }
-          }
-
-          @media (min-width: 1024px) and (max-height: 700px) {
-            .how-it-works-preview-card { min-height: 350px; }
           }
         `}</style>
     </section>

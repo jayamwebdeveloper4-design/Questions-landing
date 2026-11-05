@@ -53,7 +53,7 @@ export const Header: React.FC = () => {
                   className="shadow-sm hover:shadow gap-2 text-sm font-semibold"
                   onClick={() => window.location.assign(APP_SIGNUP_URL)}
                 >
-                  <span>Get Started Free</span>
+                  <span>Get Started</span>
                   <ArrowRight size={16} />
                 </Button>
 
@@ -99,7 +99,7 @@ export const Header: React.FC = () => {
                 {/* Card Header: Brand & Status Tag */}
                 <div className="flex items-center justify-between border-b border-surface-container pb-3">
                   <div className="flex items-center gap-2">
-                    <img src="/Logo.png" alt="Logo" className="h-7 w-7 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}Logo.png`} alt="Logo" className="h-7 w-7 object-contain" />
                     <div>
                       <p className="font-display text-sm font-bold tracking-tight text-on-surface">
                         QuotFlow

@@ -1,9 +1,3 @@
-import {
-  PRIVACY_POLICY_URL,
-  REFUND_CANCELLATION_URL,
-  SUPPORT_CONTACT_URL,
-  TERMS_URL,
-} from "../config";
 
 const footerLinks = [
   { label: "Home", href: "#home" },
@@ -22,13 +16,10 @@ export default function Footer() {
         <div className="max-w-md">
           <a href="https://jayamwebsolutions.com/" className="inline-flex items-center gap-3">
             <img
-              src="/jayam-web-solutions-logo.png"
+              src={`${import.meta.env.BASE_URL}jayam-web-solutions-logo.png`}
               alt="Jayam Websolution"
               className="h-10 w-auto object-contain"
             />
-            <span className="font-display text-sm font-bold text-white">
-              Quotation Generator
-            </span>
           </a>
           <p className="mt-4 text-sm leading-6 text-white/70">
             A simpler way to create professional quotations and keep your
@@ -70,26 +61,6 @@ export default function Footer() {
             Explore Jayam products
             <span aria-hidden="true">↗</span>
           </a>
-          <h2 className="mt-6 text-sm font-bold uppercase tracking-[0.16em] text-[#82BDA7]">
-            Policies & Support
-          </h2>
-          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3">
-            {[
-              { label: "Privacy Policy", href: PRIVACY_POLICY_URL },
-              { label: "Terms", href: TERMS_URL },
-              { label: "Refund/Cancellation", href: REFUND_CANCELLATION_URL },
-              { label: "Support/Contact", href: SUPPORT_CONTACT_URL },
-            ].map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-sm text-white/75 transition-colors hover:text-white"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
 

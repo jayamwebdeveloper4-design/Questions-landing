@@ -71,7 +71,7 @@ const CustomerBody: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-3">
+    <div className="flex h-full flex-col justify-between">
       {/* Search box with typing */}
       <div className="flex items-center gap-2 rounded-lg border border-primary-container/40 bg-white px-3 py-2 ring-2 ring-primary-container/15">
         <Search size={14} className="text-on-surface-variant" />
@@ -125,9 +125,13 @@ const CustomerBody: React.FC = () => {
         ))}
       </div>
 
-      <p className="sp-up text-[10px] font-medium text-primary-container" style={d(2400)}>
-        ✓ Details auto-filled from GSTIN
-      </p>
+      <div
+        className="sp-up flex items-center gap-1.5 rounded-lg border border-primary-container/20 bg-[#F4FAF7] px-2.5 py-1.5 text-[10px] font-medium text-primary-container"
+        style={d(2400)}
+      >
+        <CheckCircle2 size={12} className="text-primary-container" />
+        <span>Details auto-filled from GSTIN</span>
+      </div>
     </div>
   );
 };
@@ -145,56 +149,58 @@ const QuotationBody: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div className="mb-1 flex items-center justify-between">
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-on-surface-variant">
-          Line Items
-        </span>
-        <span
-          className="sp-up sp-pulse inline-flex items-center gap-1 rounded-md bg-[#E7F2EE] px-2 py-1 text-[10px] font-semibold text-primary-container"
-          style={d(1000)}
-        >
-          <Plus size={11} /> Add item
-        </span>
-      </div>
-
-      <div className="divide-y divide-surface-container rounded-lg border border-outline-variant/30 px-2.5">
-        {quotationExample.items.map((item, i) => (
-          <div
-            key={item.name}
-            className="sp-right flex items-center justify-between py-2"
-            style={d(150 + i * 250)}
+    <div className="flex h-full flex-col justify-between">
+      <div>
+        <div className="mb-1 flex items-center justify-between">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-on-surface-variant">
+            Line Items
+          </span>
+          <span
+            className="sp-up sp-pulse inline-flex items-center gap-1 rounded-md bg-[#E7F2EE] px-2 py-0.5 text-[10px] font-semibold text-primary-container"
+            style={d(1000)}
           >
-            <div>
-              <p className="text-xs font-medium text-on-surface">{item.name}</p>
-              <p className="text-[10px] text-on-surface-variant">{item.quantity}</p>
+            <Plus size={11} /> Add item
+          </span>
+        </div>
+
+        <div className="divide-y divide-surface-container rounded-lg border border-outline-variant/30 px-2.5">
+          {quotationExample.items.map((item, i) => (
+            <div
+              key={item.name}
+              className="sp-right flex items-center justify-between py-1.5"
+              style={d(150 + i * 250)}
+            >
+              <div>
+                <p className="text-xs font-medium text-on-surface">{item.name}</p>
+                <p className="text-[10px] text-on-surface-variant">{item.quantity}</p>
+              </div>
+              <span className="font-display text-xs font-bold text-on-surface">
+                {formatQuotationCurrency(item.amount)}
+              </span>
             </div>
-            <span className="font-display text-xs font-bold text-on-surface">
-              {formatQuotationCurrency(item.amount)}
-            </span>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="mt-3 space-y-1.5 px-1">
-        {summary.map((row, i) => (
-          <div
-            key={row.label}
-            className="sp-up flex items-center justify-between text-[11px] text-on-surface-variant"
-            style={d(1000 + i * 120)}
-          >
-            <span>{row.label}</span>
-            <span className={`font-semibold ${row.tone || "text-on-surface"}`}>
-              {row.value < 0
-                ? `-${formatQuotationCurrency(Math.abs(row.value))}`
-                : formatQuotationCurrency(row.value)}
-            </span>
-          </div>
-        ))}
+        <div className="mt-2 space-y-1 px-1">
+          {summary.map((row, i) => (
+            <div
+              key={row.label}
+              className="sp-up flex items-center justify-between text-[11px] text-on-surface-variant"
+              style={d(1000 + i * 120)}
+            >
+              <span>{row.label}</span>
+              <span className={`font-semibold ${row.tone || "text-on-surface"}`}>
+                {row.value < 0
+                  ? `-${formatQuotationCurrency(Math.abs(row.value))}`
+                  : formatQuotationCurrency(row.value)}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div
-        className="sp-up mt-3 flex items-center justify-between rounded-lg bg-[#F4FAF7] px-3 py-2.5 ring-1 ring-primary-container/30"
+        className="sp-up mt-2 flex items-center justify-between rounded-lg bg-[#F4FAF7] px-3 py-2 ring-1 ring-primary-container/30"
         style={d(1450)}
       >
         <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">
@@ -227,49 +233,51 @@ const BrandingBody: React.FC = () => {
   }, []);
 
   return (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between">
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-on-surface-variant">
-          Choose Template
-        </span>
-        <span key={sel} className="sp-pop text-[10px] font-bold text-primary-container">
-          {templates[sel].name}
-        </span>
-      </div>
+    <div className="flex h-full flex-col justify-between">
+      <div>
+        <div className="mb-2 flex items-center justify-between">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-on-surface-variant">
+            Choose Template
+          </span>
+          <span key={sel} className="sp-pop text-[10px] font-bold text-primary-container">
+            {templates[sel].name}
+          </span>
+        </div>
 
-      {/* Template thumbnails - selection keeps moving */}
-      <div className="grid grid-cols-3 gap-2.5">
-        {templates.map((t, i) => {
-          const isSel = i === sel;
-          return (
-            <div key={t.name} className="sp-up" style={d(i * 150)}>
-              <div
-                className={`relative rounded-lg border-2 p-2 transition-all duration-300 ${
-                  isSel
-                    ? "scale-105 border-primary-container bg-[#F4FAF7] shadow-md"
-                    : "border-outline-variant/40 bg-white"
-                }`}
-              >
-                <div className="h-2 w-8 rounded" style={{ backgroundColor: t.accent }} />
-                <div className="mt-1.5 h-1 w-12 rounded bg-[#D6DCE1]" />
-                <div className="mt-3 space-y-1">
-                  <div className="h-1 rounded bg-[#E1E6EA]" />
-                  <div className="h-1 rounded bg-[#E1E6EA]" />
-                  <div className="h-1 w-3/4 rounded bg-[#E1E6EA]" />
-                </div>
+        {/* Template thumbnails - selection keeps moving */}
+        <div className="grid grid-cols-3 gap-2.5">
+          {templates.map((t, i) => {
+            const isSel = i === sel;
+            return (
+              <div key={t.name} className="sp-up" style={d(i * 150)}>
                 <div
-                  className="ml-auto mt-3 h-1.5 w-6 rounded"
-                  style={{ backgroundColor: t.accent, opacity: 0.6 }}
-                />
-                {isSel && (
-                  <span className="sp-pop absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container text-white">
-                    <Check size={10} strokeWidth={3} />
-                  </span>
-                )}
+                  className={`relative rounded-lg border-2 p-2 transition-all duration-300 ${
+                    isSel
+                      ? "scale-105 border-primary-container bg-[#F4FAF7] shadow-md"
+                      : "border-outline-variant/40 bg-white"
+                  }`}
+                >
+                  <div className="h-2 w-8 rounded" style={{ backgroundColor: t.accent }} />
+                  <div className="mt-1.5 h-1 w-12 rounded bg-[#D6DCE1]" />
+                  <div className="mt-3 space-y-1">
+                    <div className="h-1 rounded bg-[#E1E6EA]" />
+                    <div className="h-1 rounded bg-[#E1E6EA]" />
+                    <div className="h-1 w-3/4 rounded bg-[#E1E6EA]" />
+                  </div>
+                  <div
+                    className="ml-auto mt-3 h-1.5 w-6 rounded"
+                    style={{ backgroundColor: t.accent, opacity: 0.6 }}
+                  />
+                  {isSel && (
+                    <span className="sp-pop absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container text-white">
+                      <Check size={10} strokeWidth={3} />
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       {/* Logo drop + Signature draw */}
@@ -327,7 +335,7 @@ const BrandingBody: React.FC = () => {
 /* ------------------------------------------------------------------ */
 
 const SendBody: React.FC = () => (
-  <div className="space-y-3">
+  <div className="flex h-full flex-col justify-between">
     {/* PDF generation progress */}
     <div className="rounded-xl border border-outline-variant/40 bg-surface-canvas p-3">
       <div className="flex items-center justify-between">
@@ -462,11 +470,11 @@ export const StepPreview: React.FC<StepPreviewProps> = ({ steps, active }) => {
         aria-hidden="true" />
 
       {/* Main Quotation Surface Card */}
-      <div className="how-it-works-preview-card relative min-h-112.5 rounded-2xl border border-outline-variant/50 bg-white p-4 sm:p-5 shadow-[0_12px_32px_rgba(11,77,60,0.08)]">
+      <div className="how-it-works-preview-card relative flex h-[420px] w-full flex-col rounded-2xl border border-outline-variant/50 bg-white p-4 sm:p-5 shadow-[0_12px_32px_rgba(11,77,60,0.08)]">
         {/* Card Header: Brand & Status Tag */}
-        <div className="flex items-center justify-between border-b border-surface-container pb-3">
+        <div className="flex shrink-0 items-center justify-between border-b border-surface-container pb-3">
           <div className="flex items-center gap-2">
-            <img src="/Logo.png" alt="Logo" className="h-7 w-7 object-contain" />
+            <img src={`${import.meta.env.BASE_URL}Logo.png`} alt="Logo" className="h-7 w-7 object-contain" />
             <div>
               <p className="font-display text-sm font-bold tracking-tight text-on-surface">
                 QuotFlow
@@ -484,7 +492,7 @@ export const StepPreview: React.FC<StepPreviewProps> = ({ steps, active }) => {
         </div>
 
         {/* Step body */}
-        <div key={active} className="pt-3">
+        <div key={active} className="flex-1 pt-3">
           <Body />
         </div>
       </div>

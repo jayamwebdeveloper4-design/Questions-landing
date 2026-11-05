@@ -69,7 +69,7 @@ export const NaveBar = () => {
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 {/* Product branding */}
                 <a href="#home" className="flex shrink-0 items-center gap-2">
-                    <img src="/Logo.png" alt="" className="h-9 w-9 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}Logo.png`} alt="" className="h-9 w-9 object-contain" />
                     <span className="font-display text-sm font-bold tracking-tight text-primary-container sm:text-lg">
                         Quotation Generator
                     </span>
@@ -115,7 +115,7 @@ export const NaveBar = () => {
                         size="md"
                         onClick={() => window.location.assign(APP_SIGNUP_URL)}
                     >
-                        Get Started Free
+                        Get Started
                     </Button>
                 </div>
 
